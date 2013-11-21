@@ -4,10 +4,15 @@ MY_DIR="$(cd $(dirname $0); pwd)"
 
 # ~/local
 mkdir ~/local
-mkdir ~/local/bin
+mkdir ~/local/{bin,lib}
 
 cd ~/local
 git clone https://github.com/east301/dotfiles.git
+
+# python
+mkdir ~/local/lib/python
+ln -s ~/local/dotfiles/python/sitecustomize.py ~/local/lib/python/sitecustomize.py
+ln -s ~/local/dotfiles/python/startup.py ~/local/lib/python/startup.py
 
 # screen
 ln -s ~/local/dotfiles/screen/screenrc ~/.screenrc

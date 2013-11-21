@@ -62,6 +62,12 @@ alias grep='grep --color=auto'
 mkcd() { mkdir -p "$@" && cd "$_"; }
 gzless() { gzcat "$@" | less; }
 
+# Python-related settings
+PYTHONPATH=~/local/lib/python:$PYTHONPATH
+PYTHONSTARTUP=~/local/lib/python/startup.py
+
+workon() { source ~/local/python/$1/bin/activate; }
+
 
 ###
 ### Mac OS X specific settings
