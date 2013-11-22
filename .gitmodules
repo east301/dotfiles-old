@@ -1,0 +1,3 @@
+[submodule "dependencies/virtualenv"]
+	path = dependencies/virtualenv
+	url = https://github.com/pypa/virtualenv.git
