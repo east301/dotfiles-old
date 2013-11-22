@@ -16,6 +16,7 @@ fi
 DF_DIR=$(rpath.py -n -d 2 $0)
 VCS_DIR=$DF_DIR/vcs
 
+source ~/local/python/dotfiles/bin/activate
 python $DF_DIR/dependencies/vcs-profile-manager/manager.py\
     --profile-directory $VCS_DIR --profile-prefix "git-"\
     change git $VCS_DIR/git-template.ini "$1" ~/.gitconfig
