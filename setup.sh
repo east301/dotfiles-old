@@ -31,5 +31,6 @@ ln -s ~/local/dotfiles/util/rpath.py ~/local/bin/rpath.py
 # vcs
 pip install pyyaml
 
+ln -s ~/local/dotfiles/dependencies/git/contrib/diff-highlight/diff-highlight ~/local/bin/diff-highlight
 ln -s ~/local/dotfiles/vcs/change-git-profile.sh ~/local/bin/change-git-profile
 ln -s ~/local/dotfiles/vcs/change-hg-profile.sh ~/local/bin/change-hg-profile
