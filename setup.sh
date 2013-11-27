@@ -9,6 +9,10 @@ mkdir ~/local/{bin,lib}
 cd ~/local
 git clone https://github.com/east301/dotfiles.git
 
+cd ~/local/dotfiles
+git submodule init
+git submodule update
+
 # virtualenv for dotfiles
 mkdir ~/local/python
 python ~/local/dotfiles/dependencies/virtualenv/virtualenv.py ~/local/python/dotfiles
